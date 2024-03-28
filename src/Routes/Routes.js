@@ -19,10 +19,10 @@ import {
 } from "../Controllers/PropertyController.js";
 //* Manager APIs
 
-router.get("/test", (req, res) => {
+router.get("/", (req, res) => {
   console.log("Every things is working fine!");
 
-  return res.json("Welcome! Every thing is working Fine");
+  return res.json({message: "Everything is working FINE"});
 });
 
 router.post("/managers/create", createManager);
